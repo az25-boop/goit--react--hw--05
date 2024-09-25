@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import MovieList from "../../components/MovieList/MovieList";
 import { getFilmsTrendingAccess } from "../../js/films-api";
+import MovieList from "../../components/MovieList/MovieList";
 import Loader from "../../components/Loader/Loader";
 import style from "../HomePage/HomePage.module.css";
 

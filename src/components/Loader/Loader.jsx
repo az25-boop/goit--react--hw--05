@@ -1,4 +1,4 @@
-import { Bars } from "react-loader-spinner";
+import { Audio } from "react-loader-spinner";
 import style from "../Loader/Loader.module.css";
 
 const Loader = () => {

@@ -1,12 +1,12 @@
 import axios from "axios";
 const TOKEN =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMDlmZDM3OWFlYTAxYjdjMTg1MTk3NTIyMDIyZWFmZCIsIm5iZiI6MTcyNzI2NjY4Ni4yOTEwODksInN1YiI6IjY2ZjE0Nzc0YTgyYjAwNTcwMzI2ODU4YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-GLrnY5XYsN15cGCySBfSMG74P_T1yaTh9IgcS2s7GA";
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OWI4NmViYWIzMzMxNDdhYTA2YjlhODk5YjY0YzYxNCIsInN1YiI6IjY1ZTc2YjQ4MzFkMDliMDE2MmUzMWE5ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AB-5VH5rmU095UcQzHVjMm3vM3utfCAE_YAytC-tzY0";
 
 export const getFilmsTrendingAccess = async () => {
-  const url = "https://api.themoviedb.org/3/trending/movie/day?language=en-US";
+  const url = `https://api.themoviedb.org/3/trending/movie/day?language=en-US`;
   const params = {
     headers: {
-      Authorization: "Bearer ${TOKEN}",
+      Authorization: `Bearer ${TOKEN}`,
     },
   };
   try {
@@ -18,11 +18,10 @@ export const getFilmsTrendingAccess = async () => {
 };
 
 export const getFilmsDetails = async (id, codeWord = "") => {
-  const url =
-    "https://api.themoviedb.org/3/movie/${id}${codeWord}?language=en-US";
+  const url = `https://api.themoviedb.org/3/movie/${id}${codeWord}?language=en-US`;
   const params = {
     headers: {
-      Authorization: "Bearer ${TOKEN}",
+      Authorization: `Bearer ${TOKEN}`,
     },
   };
   try {
@@ -35,11 +34,10 @@ export const getFilmsDetails = async (id, codeWord = "") => {
 };
 
 export const getFilmsSearch = async (query, page = 1) => {
-  const url =
-    "https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=${page}";
+  const url = `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=${page}`;
   const params = {
     headers: {
-      Authorization: "Bearer ${TOKEN}",
+      Authorization: `Bearer ${TOKEN}`,
     },
   };
   try {
