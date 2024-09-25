@@ -5,6 +5,7 @@
       "destination": "/"
     }
   ],
+
   "builds": [
     {
       "src": "vite.config.js",
