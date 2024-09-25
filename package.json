@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "build": "vite build", "[my-framework] build --output public"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -41,4 +41,5 @@
     "globals": "^15.9.0",
     "vite": "^5.4.1"
   }
+
 }
