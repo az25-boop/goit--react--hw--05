@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getFilmsDetails } from "../../js/films-api";
 import MovieCastItem from "../MovieCastItem/MovieCastItem";
 import LoaderMoreInform from "../Loader/LoaderMoreInform";
-import style from "./MovieCast.module.css";
+import style from "../MovieCast/MovieCast.module.css";
 
 const MovieCast = () => {
   const { id } = useParams();

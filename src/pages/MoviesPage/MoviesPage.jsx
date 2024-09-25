@@ -1,11 +1,11 @@
 import { useSearchParams } from "react-router-dom";
-import MovieList from "../../components/MovieList/MovieList";
-import SearchBox from "../../components/SearchBox/SearchBox";
-import { getFilmsSearch } from "../../js/films-api.js";
 import { useEffect, useState } from "react";
-import Loader from "../../components/Loader/Loader.jsx";
 import toast, { Toaster } from "react-hot-toast";
-import style from "./MoviesPage.module.css";
+import MovieList from "../../components/MovieList/MovieList.jsx";
+import SearchBox from "../../components/SearchBox/SearchBox.jsx";
+import { getFilmsSearch } from "../../js/films-api.js";
+import Loader from "../../components/Loader/Loader.jsx";
+import style from "../MoviesPage/MoviesPage.module.css";
 
 const MoviesPage = () => {
   const [searchResults, setSearchResults] = useState([]);

@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import style from "./Navigation.module.css";
+import style from "../Navigation/Navigation.module.css";
 import clsx from "clsx";
 
 const Navigation = () => {

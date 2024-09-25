@@ -1,5 +1,5 @@
 import { Field, Form, Formik } from "formik";
-import style from "./SearchBox.module.css";
+import style from "../SearchBox/SearchBox.module.css";
 import toast from "react-hot-toast";
 
 const SearchBox = ({ onSubmit }) => {

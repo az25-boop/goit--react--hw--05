@@ -5,14 +5,14 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-import { getFilmsDetails } from "../../js/films-api.js";
-import { Suspense, useEffect, useState } from "react";
+import clsx from "clsx";
 import { format } from "date-fns";
 import { GoArrowLeft } from "react-icons/go";
+import { Suspense, useEffect, useState } from "react";
+import { getFilmsDetails } from "../../js/films-api.js";
 import Loader from "../../components/Loader/Loader.jsx";
-import style from "./MovieDetailsPage.module.css";
-import clsx from "clsx";
-import notFoundImg from "../../assets/img/image-not-found.jpg";
+import notFoundImg from "../../assets/img/not-found-page.png";
+import style from "../MovieDetailsPage/MovieDetailsPage.module.css";
 
 const MovieDetailsPage = () => {
   const { id } = useParams();

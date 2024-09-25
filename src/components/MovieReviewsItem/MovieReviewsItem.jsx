@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import style from "./MovieReviewsItem.module.css";
+import style from "../MovieReviewsItem/MovieReviewsItem.module.css";
 
 const MovieReviewsItem = ({
   dataReviews: {

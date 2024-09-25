@@ -1,16 +1,16 @@
 import { Bars } from "react-loader-spinner";
-import style from "./Loader.module.css";
+import style from "../Loader/Loader.module.css";
 
 const Loader = () => {
   return (
     <div className={style.containerLoader}>
-      <Bars
-        height="80"
-        width="80"
-        color="#F6F6F6"
-        ariaLabel="bars-loading"
+      <Audio
+        height="100"
+        width="100"
+        color="#4fa94d"
+        ariaLabel="audio-loading"
         wrapperStyle={{}}
-        wrapperClass=""
+        wrapperClass="wrapper-class"
         visible={true}
       />
     </div>

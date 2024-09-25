@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import style from "./MovieItem.module.css";
+import style from "../MovieCastItem/MovieCastItem.module.css";
 import notFoundImg from "../../assets/img/image-not-found.jpg";
 
 const MovieItem = ({
