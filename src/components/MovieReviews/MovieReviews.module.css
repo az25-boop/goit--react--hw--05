@@ -1,0 +1,11 @@
+.reviewNotFound {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 0.89em;
+}
+
+.reviewItem {
+  margin-bottom: 20px;
+}

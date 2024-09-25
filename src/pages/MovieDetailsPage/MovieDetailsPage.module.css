@@ -1,0 +1,152 @@
+.movieDetails {
+  position: relative;
+  padding: 0 16px;
+}
+
+.movieDetailsThumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btnLink {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #f6f6f6;
+  color: #1b1b1b;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnLink:hover,
+.btnLink:focus {
+  background-color: rgb(0, 70, 182);
+  color: #f6f6f6;
+  box-shadow: 0 1px 1px #00000024, 0 1px 3px #0000001f, 0 2px 1px #0003;
+}
+
+.movieDetailsSection {
+  margin-bottom: 30px;
+}
+
+.movieDetailsImg {
+  margin-bottom: 20px;
+}
+
+.movieDetailsTitle {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.movieDetailsTagline {
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 5px;
+}
+
+.movieDetailsText {
+  font-size: 17px;
+  line-height: 1.2;
+
+  margin-bottom: 5px;
+}
+
+.movieDetailsScore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spanAccent {
+  font-weight: 700;
+}
+
+.iconSpilled {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/img/spilled.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.iconUpright {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/img/upright.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.movieDetailsTitleFilm {
+  font-size: 25px;
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+}
+
+.movieDetailsGenresList {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.moreInfo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.moreInfoLinkActive {
+  background-color: rgb(0, 70, 182);
+  color: #f6f6f6;
+  box-shadow: 0 1px 1px #00000024, 0 1px 3px #0000001f, 0 2px 1px #0003;
+}
+
+@media screen and (min-width: 768px) {
+  .movieDetailsThumb {
+    flex-direction: row;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .btnLink {
+    width: 120px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .movieDetailsThumb {
+    gap: 20px;
+  }
+
+  .movieDetailsTitle {
+    text-align: left;
+  }
+
+  .forLaptop {
+    width: 700px;
+  }
+}

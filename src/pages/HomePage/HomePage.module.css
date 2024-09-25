@@ -1,0 +1,18 @@
+.mainSection {
+  position: relative;
+}
+
+.mainTitle {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.89em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainTitle {
+    font-size: 56px;
+  }
+}

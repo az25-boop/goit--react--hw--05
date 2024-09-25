@@ -1,0 +1,31 @@
+.castItemThumb {
+  text-align: center;
+  padding: 10px;
+}
+
+.castItemTitle {
+  letter-spacing: -0.02em;
+  line-height: 0.89em;
+  margin-bottom: 10px;
+}
+
+.castItemCharacter {
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  line-height: 0.89em;
+}
+
+.castItemSpan {
+  font-weight: 700;
+}
+
+.castImg {
+  width: 200px;
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .castImg {
+    height: 300px;
+  }
+}

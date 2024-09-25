@@ -1,0 +1,32 @@
+.trandingThumb {
+  height: 160px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(126, 161, 216);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  padding: 10px 20px;
+}
+
+.trandingTitle {
+  color: rgb(0, 70, 182);
+  font-size: 25px;
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+}
+
+.trandingText {
+  font-size: 18px;
+  line-height: 1.2;
+
+  margin-bottom: 5px;
+}
+
+.movieImg {
+  width: 350px;
+  height: 500px;
+}

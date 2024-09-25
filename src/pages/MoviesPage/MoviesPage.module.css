@@ -1,0 +1,41 @@
+.moviesSearch {
+  position: relative;
+}
+
+.btnPaginationThumb {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btnPagination {
+  width: 150px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #f6f6f6;
+  color: #1b1b1b;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnPagination:not(:disabled):hover,
+.btnPagination:not(:disabled):focus {
+  background-color: rgb(0, 70, 182);
+  color: #f6f6f6;
+  box-shadow: 0 1px 1px #00000024, 0 1px 3px #0000001f, 0 2px 1px #0003;
+}
+
+.btnPagination:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toastTextCenter {
+  text-align: center;
+}

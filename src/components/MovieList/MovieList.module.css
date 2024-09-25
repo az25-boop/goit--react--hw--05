@@ -1,0 +1,26 @@
+.containerList {
+  padding: 0 16px;
+}
+
+.filmsList {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filmItem {
+  transition: transform 0.3s;
+}
+
+.filmItem:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1440px) {
+  .filmsList {
+    gap: 40px;
+  }
+}
