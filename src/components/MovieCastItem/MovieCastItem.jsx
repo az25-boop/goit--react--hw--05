@@ -1,38 +1,25 @@
-import { format } from "date-fns";
-import style from "../MovieCastItem/MovieCastItem.module.css";
-import notFoundImg from "../../assets/img/image-not-found.jpg";
+import style from "./MovieCastItem.module.css";
+import imgNotFound from "../../assets/img/image-not-found.jpg";
 
-const MovieItem = ({
-  dataFilm: { poster_path, title, release_date, vote_average },
-}) => {
-  const formatDate = (date) => {
-    if (!date || isNaN(new Date(date))) {
-      return "Unknown date";
-    }
-    return format(new Date(date), "MMMM dd yyyy");
-  };
-  const urlImg = `https://image.tmdb.org/t/p/w500/${poster_path}`;
-  const voteAverage = Number(vote_average).toFixed(2);
+const MovieCastItem = ({ dataCast: { profile_path, name, character } }) => {
+  const urlImg = `https://image.tmdb.org/t/p/w500/${profile_path}`;
   return (
     <div>
       <img
-        className={style.movieImg}
-        src={poster_path ? urlImg : notFoundImg}
-        alt={title}
-        width="350"
-        height="500"
+        className={style.castImg}
+        src={profile_path ? urlImg : imgNotFound}
+        alt={name}
+        width="200"
+        height="300"
       />
-      <div className={style.trandingThumb}>
-        <h3 className={style.trandingTitle}>{title}</h3>
-        <p className={style.trandingText}>
-          Release date: {formatDate(release_date)}
+      <div className={style.castItemThumb}>
+        <h3 className={style.castItemTitle}>{name}</h3>
+        <p className={style.castItemCharacter}>
+          <span className={style.castItemSpan}>Character:</span> {character}
         </p>
-        {voteAverage !== "0.00" && (
-          <p className={style.trandingText}>Rating: {voteAverage}</p>
-        )}
       </div>
     </div>
   );
 };
 
-export default MovieItem;
+export default MovieCastItem;
