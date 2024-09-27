@@ -1,8 +1,7 @@
 body {
   font-family: "DM Sans", sans-serif;
-  background: hsl(240, 50%, 9%);
-  margin: 0;
-  overflow: hidden;
+  background-color: #0d0d0e;
+  color: #f6f6f6;
 }
 
 button {
@@ -36,10 +35,10 @@ img {
   height: auto;
 }
 
-#canvas {
+/* #canvas {
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-}
+} */
