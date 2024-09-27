@@ -1,7 +1,8 @@
 body {
   font-family: "DM Sans", sans-serif;
-  background-color: #0d0d0e;
-  color: #f6f6f6;
+  background: hsl(240, 50%, 9%);
+  margin: 0;
+  overflow: hidden;
 }
 
 button {
